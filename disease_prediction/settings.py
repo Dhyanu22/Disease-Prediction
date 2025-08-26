@@ -28,8 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "127.0.0.1", 
     "192.168.246.129", 
-    "localhost"
-    
+    "localhost",
+    'LonerWITHABoner.pythonanywhere.com'
 ]
 
 
@@ -84,11 +84,8 @@ WSGI_APPLICATION = 'disease_prediction.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'predica',
-        'USER': 'postgres',
-        'PASSWORD': '2748',
-        'HOST': 'localhost'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
