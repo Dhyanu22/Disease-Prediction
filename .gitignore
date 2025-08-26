@@ -1,3 +1,5 @@
 .vscode/
 .DS_Store
 venv/
+config.bat
+node_modules
